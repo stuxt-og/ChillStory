@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "org.stuxt.chillstory.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.chillstory.refmap.json",
+  "mixins": [
+    "FearEffectPatch",
+    "MixinPlayerRenderer",
+    "MixinDownloadingTexture"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

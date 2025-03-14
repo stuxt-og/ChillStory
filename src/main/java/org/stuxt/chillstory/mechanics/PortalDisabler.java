@@ -1,4 +1,4 @@
-package org.stuxt.chillstory;
+package org.stuxt.chillstory.mechanics;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -11,6 +11,7 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.stuxt.chillstory.MainClass;
 
 @Mod.EventBusSubscriber(modid = MainClass.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class PortalDisabler {
@@ -29,7 +30,7 @@ public class PortalDisabler {
                     ServerPlayer player = (ServerPlayer)event.getEntity();
 
                     if (player != null) {
-                        player.sendSystemMessage(Component.literal("Этот мир может иметь только один портал..."));
+                        player.sendSystemMessage(Component.literal("Этот мир не может иметь порталы...."));
                     }
 
                     break;
